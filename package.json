@@ -1,17 +1,33 @@
 {
   "name": "playwright-jan25",
   "version": "1.0.0",
+  "description": "A test automation project using Playwright and Cucumber.js for BDD-style testing.",
   "main": "index.js",
   "scripts": {
-    "test": "cucumber-js test"
+    "test": "cucumber-js test",
+    "start": "node index.js",
+    "lint": "eslint .",
+    "format": "prettier --write ."
   },
-  "author": "dev",
-  "license": "ISC",
+  "author": "Dev",
+  "license": "MIT",
+  "keywords": [
+    "playwright",
+    "cucumber-js",
+    "bdd",
+    "automation",
+    "testing"
+  ],
   "devDependencies": {
-    "@cucumber/cucumber": "^11.1.1"
+    "@cucumber/cucumber": "^11.1.1",
+    "eslint": "^8.50.0",
+    "prettier": "^3.0.0"
   },
   "dependencies": {
     "playwright": "^1.49.1"
   },
-  "description": ""
+  "engines": {
+    "node": ">=18.0.0 <21.0.0",
+    "npm": ">=9.0.0 <10.0.0"
+  }
 }
